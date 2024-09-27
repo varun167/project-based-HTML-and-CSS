@@ -1,0 +1,457 @@
+header{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+header > img{
+    height: 60vh;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    height: 10vh;
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    z-index: 2;
+    padding: 0rem 2rem;
+    max-width: 100%;
+}
+
+header > h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 4rem;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.buttons{   
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons > a{  
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: white;
+    transition: 0.3s ease;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding: 1rem 0.5rem;
+    transition: 0.5s ease;
+    letter-spacing: 0.08rem;
+}
+
+.buttons > :nth-child(5){
+    border: 1px solid;
+    margin-top: 3px;
+    border-radius: 7px;
+     padding: 0.66rem 1.5rem;
+     height: 45px;
+}
+
+.logo{  
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    transition: 0.3s ease;
+}
+
+
+
+#checkbox , .ham{  
+    display: none;
+    font-size: 1.5rem;
+    padding: 0rem 0.2rem 0.2rem 0.2rem;
+    border: 1.5px solid white;
+    text-align: center;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+
+
+#checkbox:checked ~ label + .buttons { 
+    top: 20vh;
+    transition: 0.5s ease;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-left:240px ;
+    padding-right: 200px;
+    gap: 3rem;
+    margin-top: 100px;
+
+}
+
+
+
+.contact h1{
+  font-size: 3rem;
+  color: rgb(22, 64, 37);
+  font-family: "Old Standard TT", serif;
+
+}
+
+.contact > :nth-child(1) > h3 {
+    font-size: 1rem;
+    color: gray;
+    padding-top: 2rem;
+} 
+
+.contact > :nth-child(1) > p{
+    font-size: 1.2rem;
+    color: rgb(39, 81, 39);
+}
+
+.user-details h1{
+    padding-bottom: 2rem;
+}
+
+.user-details input, textarea{
+width: 100%;
+margin: 1rem;
+border: none;
+border-bottom: 1px solid;
+border-color: lightgray;
+height: 40px;
+font-size: 1.2rem;
+color: lightgray;
+transition: 0.3s ease;
+}
+
+.user-details input:focus{
+    outline: none;
+}
+
+.user-details textarea:focus{
+    outline: none;
+}
+
+.user-details p{
+    display: inline-block;
+    font-size: 1em;
+    color: gray;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top:6px;
+    border-radius: 6px;
+    background-color: gold;
+}
+.team{
+    background-color: whitesmoke;
+    height: 80vh;
+}
+
+.team h1{
+    font-size: 2rem;
+    font-family: "Old Standard TT", serif;
+    color: rgb(33, 82, 33);
+    padding-top: 100px;
+    padding-left: 2%;
+    text-align-last:center ;
+   
+}
+
+.team :nth-child(2){
+   
+   display: flex;
+   gap: 1rem;
+   padding: 0 0 0 0;
+  position: relative;
+  top: 8%;
+justify-content: center;
+    
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    align-items: center;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+     padding: 1.5rem 0rem;
+     
+  }
+  
+  .footer-buttons{
+      display: flex;
+      gap: 0.3rem;
+      align-items: center;
+     
+  }
+  
+  .footer-buttons > a{
+      display: flex;
+      gap: 1.4rem;
+      align-items: center; 
+      text-decoration: none;
+      font-size: 0.9rem;
+      flex-wrap: nowrap;
+      color:green;
+      transition: 0.3s ease;
+      font-family: sans-serif;
+      font-weight: 400;
+      padding: 1rem 0.5rem;
+      transition: 0.5s ease;
+      letter-spacing: 0.08rem; 
+  }
+  
+  footer > :nth-child(3){
+   
+      color:rgb(1, 62, 1 , 0.9);
+  }
+
+ @media(max-width:1200px) { 
+    .contact{
+        padding-right:80px ;
+        padding-left: 40px;
+    }
+    .contact :nth-child(1) > h3{
+       padding-top: 1rem;
+    }
+
+    .user-details {
+        padding-right: 100px;
+    }
+    
+    .user-details h1{
+        padding-bottom: 1.5rem;
+    }
+    
+    .team {
+        height: auto;
+    }
+
+    .team h1{
+        padding-top:50px;
+    }
+
+    .team div {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .team div img {
+        width: 200px;
+        height: 200px;
+    }   
+}
+
+@media (max-width:1030px){
+    .user-details{
+        margin: 0;
+        padding-right: 50px;
+    }
+
+    .user-details h1{
+
+    }
+}
+
+@media (max-width:900px){
+    .team {
+        height: auto;
+    }
+
+    .team h1{
+        padding-top:50px;
+    }
+
+    .team div {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .team div img {
+        width: 100px;
+        height: 100px;
+    } 
+}
+
+@media (max-width: 760px) {
+    .nav {
+        gap: 1rem;
+    }
+
+    header > h1 {
+        font-size: 3rem;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 50px;
+    }
+.contact > :nth-child(1) > h1,h3,p{
+    text-align: center;
+    
+}
+
+.contact > :nth-child(1) > h1{
+    font-size: 2.5rem;
+    
+}
+
+
+    .user-details {
+        order: 1;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        padding: 0;
+    }
+   
+    .user-details h1{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .contact > :nth-child(1) {
+        order: 2;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .user-details input, textarea{
+
+        width: 90%;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #button{
+        margin-left: 40px;
+    }
+    .team {
+        height: auto;
+    }
+    
+    .team h1{
+        padding-top:50px;
+    }
+
+    .team div {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .team div img {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-buttons{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+
+.team h1{
+    padding-top:50px;
+}
+.team div {
+    flex-direction: column;
+    align-items: center;  
+}
+
+.team div img {
+    width: auto;
+    height: auto;
+    margin-bottom: 1rem; 
+}
+    footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+
+
+@media(max-width:850px){
+    .buttons {
+        display: none;
+    }
+
+    .ham {
+        display: block;
+        font-size: 2rem;
+        color: white;
+        border: none;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .buttons {
+        position: absolute;
+        top: -300px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: white;
+        z-index: 5;
+        text-align: center;
+        padding: 1rem 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .buttons > a {
+        color:black;
+        font-size: 1rem;
+        padding: 0.1rem 0;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    #checkbox:checked ~ .buttons {
+        top: 5vh;
+        display: flex;
+        transform: translateY(0);
+        transition: top 0.5s ease;
+        opacity: 1;
+    }
+
+    #checkbox:not(:checked) ~ .buttons {
+        top: -300px;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}

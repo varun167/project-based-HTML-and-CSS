@@ -1,0 +1,662 @@
+header{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+header > img{
+    height: 88vh;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    height: 10vh;
+    position: absolute;
+    left: 50%;
+    top: 9%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    z-index: 2;
+    padding: 0rem 2rem;
+    max-width: 100%;
+}
+
+.buttons{  
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons > a{
+    text-decoration: none;
+    font-size: 0.9rem;
+ 
+    color: white;
+    transition: 0.3s ease;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding: 1rem 0.5rem;
+    transition: 0.5s ease;
+    letter-spacing: 0.08rem;
+}
+
+.buttons > :nth-child(5){ 
+    border: 1px solid;
+    margin-top: 3px;
+    border-radius: 7px;
+  padding: 0.66rem 1.5rem;
+  height: 45px;
+}
+
+.logo{  
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    transition: 0.3s ease;
+}
+
+#checkbox , .ham{ 
+    display: none;
+    font-size: 1.5rem;
+    padding: 0rem 0.2rem 0.2rem 0.2rem;
+    border: 1.5px solid white;
+    text-align: center;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+header > :nth-child(3) > :nth-child(1){ 
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    letter-spacing: -0.2rem;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: normal;
+    font-size: 3.5rem;
+}
+ 
+header > :nth-child(3) > :nth-child(2){  
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 8rem;
+    font-weight: normal;
+    filter: brightness(1);
+   
+}
+
+header > :nth-child(3) > :nth-child(3) {  
+    position: absolute;  
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   color: white;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 0.05rem;
+}
+
+header > :nth-child(3) > :nth-child(4)  {  
+    position: absolute;
+    text-decoration: none;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(0, 0, 0, 0.452);
+    width: 150px;
+    height: 45px;
+     padding: 0.75rem 2.6rem;
+    background-color: gold;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+}
+
+header > :nth-child(3) > :nth-child(4):hover{ 
+    filter: brightness(0.8);
+}
+
+#checkbox:checked ~ label + .buttons { 
+    top: 20vh;
+    transition: 0.5s ease;
+}
+
+.services{
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+
+.services > #sec01{    
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 3rem;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-top: 25vh;
+    margin-bottom: 10vh;
+    font-weight: 400;
+    position: relative;
+}
+
+hr{       
+    display: block;
+    border: none;
+    position: relative;
+    top: -50px;
+    margin-top: 0px;
+    width: 6%;
+    height: 0.3rem;
+    background-color:rgb(210, 216, 37);
+    font-weight: bold;
+  
+}
+
+.services-content{
+    width: 70vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.services-content > div img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.services-content > div > :nth-child(2){
+    font-size: 1.3rem;
+  color: rgb(97, 141, 97);
+  margin-left: 0.5vw;
+  font-family: "Old Standard TT", serif;
+}
+
+.services-content > div > :nth-child(3){
+    color: grey;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-left: 0.5vw;
+    letter-spacing: 0.02rem;
+}
+
+.section{
+    background-color: whitesmoke;
+    margin: auto;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 7vh;
+    height: 30rem;
+  
+}
+
+.section > :nth-child(2){
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-family: "Old Standard TT", serif;
+    line-height: 2.5rem;
+    color: rgba(0, 68, 0, 0.837);
+}
+
+.section > :nth-child(3){
+    padding-top: 3rem;
+}
+
+.section > :nth-child(4){
+    font-size: 1.3rem;
+    color:black;
+}
+
+.about{
+    width:80%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10vw;
+    padding-top: 10vh;
+    padding-bottom:10vh ;
+}
+
+.about-content{
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap:0rem;
+}
+
+.about-image{
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-content > :nth-child(1){
+    color: rgb(5, 63, 5 , 0.5);
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+}
+
+.about-content > :nth-child(3){
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    line-height: 2.7rem;
+    color: rgba(0, 94, 0, 0.7);
+    margin-top: -1vh;
+    font-family: "Old Standard TT", serif;
+}
+
+
+.about-content > :nth-child(4){
+    font-size: 0.99rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.7rem;
+    color: rgb(1, 62, 1 , 0.5);
+}
+
+.about-content > :nth-child(5){
+    padding: 1rem 1rem;
+    border:2px solid;
+    width: 200px;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color:  rgb(1, 62, 1 , 0.7);
+    text-align: center;
+    transition: 0.5s ease;
+    margin-top: 5vh;
+}
+
+.about-content > :nth-child(5):hover{
+    color: lightgreen;
+}
+
+.questions{    
+    width: 100%;
+    position: relative;
+}
+
+  .questions > img{  
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+    position: relative;
+}
+
+.questions > :nth-child(2){
+    position: absolute; 
+    top: 20%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 3.5rem;
+    color:  rgb(46, 122, 46, 1.5);
+}
+
+.questions > :nth-child(3){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    text-align: center;
+    transform: translate(-50% , -50%);
+    font-size: 1rem;
+    color:  rgb(1, 62, 1 , 0.5);
+    line-height: 1.9rem;
+    letter-spacing: 0.03rem;
+}
+
+.questions > :nth-child(4){
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-decoration: none;
+    color:  rgb(1, 62, 1 , 0.9);
+    padding: 1rem 1.5rem;
+    background-color:gold;
+    border-radius: 0.5rem;
+}
+
+.questions > :nth-child(4):hover{
+    filter: brightness(0.8);
+}
+
+footer{
+
+  display: flex;
+  justify-content: space-between;
+  width:80%;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  padding: 1.5rem 0rem;
+ 
+}
+
+.footer-buttons{
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+   
+}
+
+.footer-buttons > a{
+    display: flex;
+    gap: 1.4rem;
+    align-items: center; 
+    text-decoration: none;
+    font-size: 0.9rem;
+    flex-wrap: nowrap;
+    color:green;
+    transition: 0.3s ease;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding: 1rem 0.5rem;
+    transition: 0.5s ease;
+    letter-spacing: 0.08rem; 
+}
+
+footer > :nth-child(3){
+    color:rgba(0, 108, 0, 0.9);
+
+}
+
+
+
+@media (max-width: 1150px) {
+    .nav {
+        gap: 2rem;
+        width: 90%;
+    }
+
+    .buttons > a {
+        font-size: 0.8rem;
+    }
+
+    header > :nth-child(3) > :nth-child(2) {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .buttons {
+        display: none;
+    }
+
+    .ham {
+        display: block;
+        font-size: 2rem;
+        color: white;
+        border: none;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .buttons {
+        position: absolute;
+        top: -300px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: white;
+        z-index: 5;
+        text-align: center;
+        padding: 2rem 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .buttons > a {
+        color:black;
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    #checkbox:checked ~ .buttons {
+        top: 10vh;
+        display: flex;
+        transform: translateY(0);
+        transition: top 0.5s ease;
+        opacity: 1;
+    }
+
+    #checkbox:not(:checked) ~ .buttons {
+        top: -300px;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .nav {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+
+
+    .buttons > a {
+        font-size: 1rem;
+    }
+
+    header > :nth-child(3) > :nth-child(1) {  
+        font-size: 2.5rem;
+    }
+
+    header > :nth-child(3) > :nth-child(2) {
+        font-size: 4.5rem;
+    }
+
+    header > :nth-child(3) > :nth-child(3) {  
+        font-size: 0.8rem;
+    }
+
+    header > :nth-child(3) > :nth-child(4) { 
+        width: 120px;
+        height: 40px;
+        padding: 10px 30px;
+        font-size: 0.7rem;
+        text-wrap: nowrap;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .questions > :nth-child(2) {
+        font-size: 2rem;
+    }
+}
+
+
+.services {
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+
+.services-content {
+    width: 85vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 1150px) {
+    .services-content {
+        grid-template-columns: repeat(3, 1fr);
+       
+    }
+
+    .services-content h1{
+        padding-top: 40px;
+    }
+}
+
+@media(max-width:600px){
+    .services-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .services-content {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .services-content > div > img{
+       justify-content: center;
+      
+    }
+}
+
+
+.about {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+@media (max-width: 970px) {
+    .about {
+        grid-template-columns: 1fr;
+        gap: 5vh;
+    }
+
+    .about-content {
+       margin: 10px;
+       
+       margin-left: auto;
+       margin-right: auto;
+      
+    }
+
+   .about-image{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+   }
+}
+
+
+.questions > img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.questions > :nth-child(2) {
+    font-size: 2.5rem;
+}
+
+.questions > :nth-child(3) {
+    width: 50%;
+}
+
+@media (max-width: 750px) {
+    .questions > :nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .questions > :nth-child(3) {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .questions > :nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    .questions > :nth-child(3) {
+        width: 90%;
+    }
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+@media (max-width: 900px) {
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .footer-buttons > a{
+        gap: 0.1rem;
+    }
+
+    footer > :nth-child(2){
+        padding-top: 2rem;
+    }
+
+    footer > :nth-child(3){
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width:450px){
+    
+    .section{
+        height: auto;
+    }
+
+    .services-content > div img{
+        width: 100%;
+    }
+}
+
+@media(max-width:425px){
+    .about-image{
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+}

@@ -1,0 +1,448 @@
+header{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+header > img{
+    height: 60vh;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    height: 10vh;
+    position: absolute;
+    left: 50%;
+    top: 9%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    z-index: 2;
+    padding: 0rem 2rem;
+    max-width: 100%;
+}
+
+.buttons{  
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons > a{  
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: white;
+    transition: 0.3s ease;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding: 1rem 0.5rem;
+    transition: 0.5s ease;
+    letter-spacing: 0.08rem;
+}
+
+.buttons > :nth-child(5){ 
+    border: 1px solid;
+    margin-top: 3px;
+    border-radius: 7px;
+  padding: 0.66rem 1.5rem;
+  height: 45px;
+}
+
+.logo{  
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    transition: 0.3s ease;
+}
+
+#checkbox , .ham{   
+    display: none;
+    font-size: 1.5rem;
+    padding: 0rem 0.2rem 0.2rem 0.2rem;
+    border: 1.5px solid white;
+    text-align: center;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+header > :nth-child(2){
+    position: absolute;
+    top:40%;
+    left: 40%;
+    font-size: 4rem;
+    color: white;
+}
+
+#checkbox:checked ~ label + .buttons { 
+    top: 20vh;
+    transition: 0.5s ease;
+}
+
+.about-quote{
+    margin: auto;
+    text-align: center;
+    padding-top:40px ;
+   padding-bottom: 50px;
+}
+
+.about-quote  p{
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2.5rem;
+    color: rgba(0, 68, 0, 0.837);
+}
+
+.deer > img{
+    margin: auto;
+    display: block;
+   place-items: center;
+   height: 540px;
+   
+}
+
+.mission-vision{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 50px ;
+
+}
+
+.mission{
+    margin: auto;
+    align-items: center;
+    
+}
+.mission > :nth-child(1){
+         font-size: 1.5rem;
+         color: rgb(34, 88, 34);
+         text-align: center;
+         margin-bottom: 20px;
+}
+
+.mission > :nth-child(2){
+    font-size: 1rem;
+    color: gray;
+    text-align: center;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.vision > :nth-child(1){
+    font-size: 1.5rem;
+    color: rgb(37, 92, 37);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.vision > :nth-child(2){
+font-size: 1rem;
+color: gray;
+text-align: center;
+}
+
+.Team{
+    background-color: whitesmoke;
+    margin: auto;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 7vh;
+    height: 30rem;
+}
+
+.Team > :nth-child(2){
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2.5rem;
+    color: rgba(0, 68, 0, 0.837);
+}
+.Team > :nth-child(3){
+    padding-top: 4rem;
+}
+
+.Team > :nth-child(4){
+   padding-top:0.5rem ;
+    font-size: 1rem;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    align-items: center;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+     padding: 1.5rem 0rem;
+    
+  }
+  
+  .footer-buttons{
+      display: flex;
+      gap: 0.3rem;
+      align-items: center;
+     
+  }
+  
+  .footer-buttons > a{
+      display: flex;
+      gap: 1.4rem;
+      align-items: center; 
+      text-decoration: none;
+      font-size: 0.9rem;
+      flex-wrap: nowrap;
+      color:green;
+      transition: 0.3s ease;
+      font-family: sans-serif;
+      font-weight: 400;
+      padding: 1rem 0.5rem;
+      transition: 0.5s ease;
+      letter-spacing: 0.08rem; 
+  }
+  
+  footer > :nth-child(3){
+   
+      color:rgb(1, 62, 1 , 0.9);
+  }
+
+  
+ 
+@media (max-width: 1150px) {
+    .nav {
+        gap: 2rem;
+    }
+    .buttons > a {
+        font-size: 0.8rem;
+    }
+}
+@media(max-width:1050px){
+    .deer > img{
+        height: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .buttons {
+        display: none;
+    }
+    .ham {
+        display: block;
+        border: none;
+    }
+
+    header{
+        height: 80vh;
+    }
+
+    header > img{
+        height: 80vh;
+    }
+    .buttons {
+        position: absolute;
+        top: -300px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: white;
+        z-index: 5;
+        text-align: center;
+        padding: 2rem 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .buttons > a {
+        color:black;
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        width: 100%;
+        border: 1px solid black;
+    }
+    #checkbox:checked ~ .buttons {
+        top: 10vh;
+        display: flex;
+        transform: translateY(0);
+        transition: top 0.5s ease;
+        opacity: 1;
+    }
+
+    #checkbox:not(:checked) ~ .buttons {
+        top: -300px;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    .nav {
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+    .deer > img {
+        height: auto;
+    }
+
+    .footer-buttons{
+        flex-direction: row;
+    }
+
+    .Team {
+        padding-top: 5vh;
+        height: 35rem;
+    }
+    .Team > :nth-child(3) {
+        padding-top:100px ;
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-buttons > a{
+        gap: 1rem;
+    }
+
+    footer > :nth-child(3){
+        padding-top: 30px;
+     }
+}
+
+
+@media (max-width: 600px) {
+
+    
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .buttons {
+        position: absolute;
+        top: -300px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: white;
+        z-index: 5;
+        text-align: center;
+        padding: 2rem 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .buttons > a {
+        color:black;
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        width: 100%;
+        border: 1px solid black;
+    }
+    #checkbox:checked ~ .buttons {
+        top: 10vh;
+        display: flex;
+        transform: translateY(0);
+        transition: top 0.5s ease;
+        opacity: 1;
+    }
+
+    #checkbox:not(:checked) ~ .buttons {
+        top: -300px;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    .about-quote p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    header > :nth-child(2) {
+        font-size: 2.5rem;
+    }
+    .Team {
+        padding-top: 5vh;
+        height: 35rem;
+    }
+    .Team > :nth-child(3) {
+        padding-top:100px ;
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .footer-buttons > a{
+        gap: 1rem;
+    }
+
+    footer > :nth-child(3){
+       padding-top: 30px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    header > img {
+        height: 50vh;
+    }
+    .about-quote p {
+        font-size: 1.2rem;
+    }
+    .Team > :nth-child(2) {
+        font-size: 1.5rem;
+    }
+    .Team {
+        padding-top: 5vh;
+        height: 35rem;
+    }
+    .Team > :nth-child(3) {
+        padding-top:100px ;
+    }
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 200px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    .about-quote p {
+        font-size: 1rem;
+    }
+
+    .Team {
+        padding-top: 5vh;
+        height: 35rem;
+    }
+    .Team > :nth-child(3) {
+        padding-top:100px ;
+    }
+}
+  
